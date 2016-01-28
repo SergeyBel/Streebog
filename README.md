@@ -1,7 +1,7 @@
 # Streebog
 Fast implementation of cryptographic hash function defined in the Russian national standard GOST R 34.11-2012
 
-For examples see [Main.cpp](https://github.com/SergeyBel/Streebog/blob/master/main.cpp)
+For examples see [main.cpp](https://github.com/SergeyBel/Streebog/blob/master/main.cpp)
 
 You can read about Streebog here:
 

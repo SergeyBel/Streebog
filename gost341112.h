@@ -22,7 +22,7 @@ class Streebog
         Streebog(int mode = 512);
         unsigned char *Hash(unsigned char *M, unsigned int size);
         int GetMode();
-		void SetMode(int mode);
+        void SetMode(int mode);
 };
 
 
