@@ -861,8 +861,7 @@ void Streebog::precalc_mul_table() {
       unsigned long long t = 0;
       unsigned char p = pi[j];
       for (int k = 0; k < 8; ++k)
-        if (p & (1 << k))
-          t ^= A[(i << 3) | (7 - k)];
+        if (p & (1 << k)) t ^= A[(i << 3) | (7 - k)];
 
       // mul_table [i][j] = t ;
 

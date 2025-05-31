@@ -7,7 +7,7 @@
 using namespace std;
 
 class Streebog {
-private:
+ private:
   int mode;
   void precalc_mul_table();
   void lps(unsigned char *in, unsigned long long *out);
@@ -18,7 +18,7 @@ private:
   void E(unsigned long long *k, unsigned long long *m);
   void g(unsigned char *h, unsigned char *m, unsigned long long *n);
 
-public:
+ public:
   Streebog(int mode = 512);
   unsigned char *Hash(unsigned char *M, unsigned int size);
   int GetMode();
