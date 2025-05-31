@@ -27,7 +27,7 @@ jobs:
       
       - name: Tests
         run: |
-          make test
+          make ci_test
 
       
       
