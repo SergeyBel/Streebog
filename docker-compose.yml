@@ -1,0 +1,9 @@
+services:
+    streebog:
+        build: "./docker"
+        container_name: streebog
+        volumes:
+            - ./:/app:rw
+        stdin_open: true
+        tty: true
+        working_dir: /app
