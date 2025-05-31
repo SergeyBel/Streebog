@@ -20,9 +20,9 @@ class Streebog {
 
  public:
   Streebog(int mode = 512);
-  unsigned char *Hash(unsigned char *M, unsigned int size);
-  int GetMode();
-  void SetMode(int mode);
+  unsigned char *hash(unsigned char *message, unsigned int size);
+  int getMode();
+  void setMode(int mode);
 };
 
 #endif

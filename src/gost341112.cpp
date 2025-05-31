@@ -940,7 +940,7 @@ void Streebog::g(unsigned char *h, unsigned char *m, unsigned long long *n) {
         (unsigned long long *)h);
 }
 
-unsigned char *Streebog::Hash(unsigned char *M, unsigned int size) {
+unsigned char *Streebog::hash(unsigned char *M, unsigned int size) {
   int i;
   unsigned char *h = (unsigned char *)calloc(64, sizeof(unsigned char));
   if (mode == 256) {
@@ -991,11 +991,11 @@ unsigned char *Streebog::Hash(unsigned char *M, unsigned int size) {
   return h;
 }
 
-Streebog::Streebog(int mode) { this->SetMode(mode); }
+Streebog::Streebog(int mode) { this->setMode(mode); }
 
-int Streebog::GetMode() { return mode; }
+int Streebog::getMode() { return mode; }
 
-void Streebog::SetMode(int mode) {
+void Streebog::setMode(int mode) {
   if (!(mode == 512 || mode == 256)) {
     throw "Incorrect GostHash mode, must be 512 or 256";
   }

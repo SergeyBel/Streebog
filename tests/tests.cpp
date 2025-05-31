@@ -1,5 +1,3 @@
-
-
 #include "../src/gost341112.h"
 #include "gtest/gtest.h"
 
@@ -18,7 +16,7 @@ TEST(Hash, Mode256) {
                               0x89, 0x0b, 0x59, 0xd8, 0xef, 0x1e, 0x15, 0x9d};
 
   Streebog streebog(256);
-  unsigned char *hash = streebog.Hash(message, 63);
+  unsigned char *hash = streebog.hash(message, 63);
 
   ASSERT_FALSE(memcmp(expected, hash, 32));
 
@@ -43,7 +41,7 @@ TEST(Hash, Mode512) {
       0xcc, 0xd5, 0xb9, 0xf5, 0x4a, 0x1a, 0xd0, 0x54, 0x1b};
 
   Streebog streebog(512);
-  unsigned char *hash = streebog.Hash(message, 63);
+  unsigned char *hash = streebog.hash(message, 63);
 
   ASSERT_FALSE(memcmp(expected, hash, 64));
 
